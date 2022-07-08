@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Planets View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PlanetsViewController" customModule="JPMCMCoE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="n8b-r4-L5r">
+                                <rect key="frame" x="0.0" y="85" width="414" height="811"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PlanetsTableViewCell" rowHeight="60" id="SrD-Oa-svU" customClass="PlanetsTableViewCell" customModule="JPMCMCoE" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SrD-Oa-svU" id="9YD-uT-c0P">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psx-hQ-SaX">
+                                                    <rect key="frame" x="20" y="15" width="374" height="30"/>
+                                                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                                    <color key="textColor" red="0.98357087369999996" green="0.91821569199999997" blue="0.32134413719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Psx-hQ-SaX" firstAttribute="top" secondItem="9YD-uT-c0P" secondAttribute="topMargin" constant="4" id="667-cw-Gqy"/>
+                                                <constraint firstItem="Psx-hQ-SaX" firstAttribute="trailing" secondItem="9YD-uT-c0P" secondAttribute="trailingMargin" id="SoK-R9-Kmt"/>
+                                                <constraint firstItem="Psx-hQ-SaX" firstAttribute="leading" secondItem="9YD-uT-c0P" secondAttribute="leadingMargin" id="fad-TM-nfX"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Psx-hQ-SaX" secondAttribute="bottom" constant="4" id="p4X-6N-H4y"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="planetNameLabel" destination="Psx-hQ-SaX" id="iG1-v7-2VK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="fod-Vl-96e"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="sTu-aE-rTc"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CW0-l9-lvp">
+                                <rect key="frame" x="154.5" y="44" width="105" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="105" id="7G4-0D-jUb"/>
+                                    <constraint firstAttribute="height" constant="35" id="wTh-xt-qNZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
+                                <color key="textColor" red="0.98357087369999996" green="0.91821569199999997" blue="0.32134413719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="n8b-r4-L5r" secondAttribute="bottom" id="54g-k7-VKm"/>
+                            <constraint firstItem="n8b-r4-L5r" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="85" id="SjZ-lO-MO7"/>
+                            <constraint firstItem="CW0-l9-lvp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jGc-ZE-4Jv"/>
+                            <constraint firstItem="n8b-r4-L5r" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rOk-CX-CsN"/>
+                            <constraint firstItem="CW0-l9-lvp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sXF-Dq-MmU"/>
+                            <constraint firstItem="n8b-r4-L5r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wwK-cD-rZW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="planetsTableView" destination="n8b-r4-L5r" id="0eK-Rz-FMf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="66.964285714285708"/>
+        </scene>
+    </scenes>
+</document>

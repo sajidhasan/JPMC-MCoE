@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0229CACA28539DBE0051EB02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0229CAC928539DBE0051EB02 /* AppDelegate.swift */; };
 		0229CACC28539DBE0051EB02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0229CACB28539DBE0051EB02 /* SceneDelegate.swift */; };
-		0229CACE28539DBE0051EB02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0229CACD28539DBE0051EB02 /* ViewController.swift */; };
+		0229CACE28539DBE0051EB02 /* PlanetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0229CACD28539DBE0051EB02 /* PlanetsViewController.swift */; };
 		0229CAD128539DBE0051EB02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0229CACF28539DBE0051EB02 /* Main.storyboard */; };
 		0229CAD428539DBE0051EB02 /* JPMCMCoE.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0229CAD228539DBE0051EB02 /* JPMCMCoE.xcdatamodeld */; };
 		0229CAD628539DC20051EB02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0229CAD528539DC20051EB02 /* Assets.xcassets */; };
@@ -17,6 +17,16 @@
 		0229CAE428539DC20051EB02 /* JPMCMCoETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0229CAE328539DC20051EB02 /* JPMCMCoETests.swift */; };
 		0229CAEE28539DC20051EB02 /* JPMCMCoEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0229CAED28539DC20051EB02 /* JPMCMCoEUITests.swift */; };
 		0229CAF028539DC20051EB02 /* JPMCMCoEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0229CAEF28539DC20051EB02 /* JPMCMCoEUITestsLaunchTests.swift */; };
+		029BA39E2857A71000E1DABC /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029BA39D2857A71000E1DABC /* SpinnerViewController.swift */; };
+		029BA3A02857AE9B00E1DABC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029BA39F2857AE9B00E1DABC /* APIService.swift */; };
+		029BA3A22857B23700E1DABC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029BA3A12857B23700E1DABC /* Constants.swift */; };
+		029BA3A42857B75900E1DABC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029BA3A32857B75900E1DABC /* Reachability.swift */; };
+		029BA3A62857B88600E1DABC /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029BA3A52857B88600E1DABC /* Planets.swift */; };
+		029BA3A82857D5BE00E1DABC /* PlanetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029BA3A72857D5BE00E1DABC /* PlanetsViewModel.swift */; };
+		029BA3AA2857E9DE00E1DABC /* PlanetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029BA3A92857E9DE00E1DABC /* PlanetsTableViewCell.swift */; };
+		02A55BBB2858C7DC00104FB7 /* Planets+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A55BB92858C7DC00104FB7 /* Planets+CoreDataClass.swift */; };
+		02A55BBC2858C7DC00104FB7 /* Planets+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A55BBA2858C7DC00104FB7 /* Planets+CoreDataProperties.swift */; };
+		02A55BBE2858C8E600104FB7 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A55BBD2858C8E600104FB7 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +50,7 @@
 		0229CAC628539DBE0051EB02 /* JPMCMCoE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPMCMCoE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0229CAC928539DBE0051EB02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0229CACB28539DBE0051EB02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0229CACD28539DBE0051EB02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0229CACD28539DBE0051EB02 /* PlanetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewController.swift; sourceTree = "<group>"; };
 		0229CAD028539DBE0051EB02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0229CAD328539DBE0051EB02 /* JPMCMCoE.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JPMCMCoE.xcdatamodel; sourceTree = "<group>"; };
 		0229CAD528539DC20051EB02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +61,16 @@
 		0229CAE928539DC20051EB02 /* JPMCMCoEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPMCMCoEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0229CAED28539DC20051EB02 /* JPMCMCoEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPMCMCoEUITests.swift; sourceTree = "<group>"; };
 		0229CAEF28539DC20051EB02 /* JPMCMCoEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPMCMCoEUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		029BA39D2857A71000E1DABC /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		029BA39F2857AE9B00E1DABC /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		029BA3A12857B23700E1DABC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		029BA3A32857B75900E1DABC /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		029BA3A52857B88600E1DABC /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
+		029BA3A72857D5BE00E1DABC /* PlanetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewModel.swift; sourceTree = "<group>"; };
+		029BA3A92857E9DE00E1DABC /* PlanetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsTableViewCell.swift; sourceTree = "<group>"; };
+		02A55BB92858C7DC00104FB7 /* Planets+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Planets+CoreDataClass.swift"; sourceTree = "<group>"; };
+		02A55BBA2858C7DC00104FB7 /* Planets+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Planets+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		02A55BBD2858C8E600104FB7 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +121,15 @@
 		0229CAC828539DBE0051EB02 /* JPMCMCoE */ = {
 			isa = PBXGroup;
 			children = (
-				0229CAC928539DBE0051EB02 /* AppDelegate.swift */,
-				0229CACB28539DBE0051EB02 /* SceneDelegate.swift */,
-				0229CACD28539DBE0051EB02 /* ViewController.swift */,
-				0229CACF28539DBE0051EB02 /* Main.storyboard */,
+				029BA3982857652D00E1DABC /* Essentials */,
+				029BA3932857607200E1DABC /* Models */,
+				029BA3972857609C00E1DABC /* Views */,
+				029BA3942857607A00E1DABC /* ViewModels */,
+				029BA3962857608B00E1DABC /* Controllers */,
+				029BA39B2857659600E1DABC /* Services */,
+				029BA39C285765B300E1DABC /* Helpers */,
+				02A55BBF2858CD6E00104FB7 /* CoreData */,
 				0229CAD528539DC20051EB02 /* Assets.xcassets */,
-				0229CAD728539DC20051EB02 /* LaunchScreen.storyboard */,
 				0229CADA28539DC20051EB02 /* Info.plist */,
 				0229CAD228539DBE0051EB02 /* JPMCMCoE.xcdatamodeld */,
 			);
@@ -128,6 +151,93 @@
 				0229CAEF28539DC20051EB02 /* JPMCMCoEUITestsLaunchTests.swift */,
 			);
 			path = JPMCMCoEUITests;
+			sourceTree = "<group>";
+		};
+		029BA3932857607200E1DABC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				029BA3A52857B88600E1DABC /* Planets.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		029BA3942857607A00E1DABC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				029BA3A72857D5BE00E1DABC /* PlanetsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		029BA3962857608B00E1DABC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0229CACD28539DBE0051EB02 /* PlanetsViewController.swift */,
+				029BA39D2857A71000E1DABC /* SpinnerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		029BA3972857609C00E1DABC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				029BA39A2857655600E1DABC /* Storyboards */,
+				029BA3992857654900E1DABC /* ViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		029BA3982857652D00E1DABC /* Essentials */ = {
+			isa = PBXGroup;
+			children = (
+				0229CAC928539DBE0051EB02 /* AppDelegate.swift */,
+				0229CACB28539DBE0051EB02 /* SceneDelegate.swift */,
+			);
+			path = Essentials;
+			sourceTree = "<group>";
+		};
+		029BA3992857654900E1DABC /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				029BA3A92857E9DE00E1DABC /* PlanetsTableViewCell.swift */,
+			);
+			path = ViewCells;
+			sourceTree = "<group>";
+		};
+		029BA39A2857655600E1DABC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0229CACF28539DBE0051EB02 /* Main.storyboard */,
+				0229CAD728539DC20051EB02 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		029BA39B2857659600E1DABC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				029BA39F2857AE9B00E1DABC /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		029BA39C285765B300E1DABC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				029BA3A12857B23700E1DABC /* Constants.swift */,
+				029BA3A32857B75900E1DABC /* Reachability.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		02A55BBF2858CD6E00104FB7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				02A55BBA2858C7DC00104FB7 /* Planets+CoreDataProperties.swift */,
+				02A55BB92858C7DC00104FB7 /* Planets+CoreDataClass.swift */,
+				02A55BBD2858C8E600104FB7 /* CoreDataStack.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +371,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0229CACE28539DBE0051EB02 /* ViewController.swift in Sources */,
+				029BA3A02857AE9B00E1DABC /* APIService.swift in Sources */,
+				0229CACE28539DBE0051EB02 /* PlanetsViewController.swift in Sources */,
 				0229CACA28539DBE0051EB02 /* AppDelegate.swift in Sources */,
 				0229CACC28539DBE0051EB02 /* SceneDelegate.swift in Sources */,
+				029BA3A22857B23700E1DABC /* Constants.swift in Sources */,
 				0229CAD428539DBE0051EB02 /* JPMCMCoE.xcdatamodeld in Sources */,
+				029BA3A42857B75900E1DABC /* Reachability.swift in Sources */,
+				02A55BBE2858C8E600104FB7 /* CoreDataStack.swift in Sources */,
+				02A55BBC2858C7DC00104FB7 /* Planets+CoreDataProperties.swift in Sources */,
+				029BA39E2857A71000E1DABC /* SpinnerViewController.swift in Sources */,
+				029BA3AA2857E9DE00E1DABC /* PlanetsTableViewCell.swift in Sources */,
+				02A55BBB2858C7DC00104FB7 /* Planets+CoreDataClass.swift in Sources */,
+				029BA3A82857D5BE00E1DABC /* PlanetsViewModel.swift in Sources */,
+				029BA3A62857B88600E1DABC /* Planets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,8 +567,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,8 +597,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
